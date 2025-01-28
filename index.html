@@ -22,19 +22,29 @@
 
         .container {
             padding: 40px;
-            max-width: 700px;
+            max-width: 750px;
             background: #181818;
             border-radius: 25px;
-            box-shadow: 0px 0px 20px rgba(255, 0, 153, 0.8);
+            box-shadow: 0px 0px 25px rgba(255, 0, 153, 0.9);
             border: 3px solid #ff0099;
+            position: relative;
         }
 
         h1 {
             color: #ff0099;
             font-size: 3rem;
             font-weight: bold;
-            text-shadow: 0px 0px 12px rgba(255, 0, 153, 0.9);
-            margin-bottom: 20px;
+            text-shadow: 0px 0px 15px rgba(255, 0, 153, 1);
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         p {
@@ -46,7 +56,7 @@
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 25px;
         }
 
         .button {
@@ -54,30 +64,46 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding: 18px;
+            padding: 22px;
             background: #ff0099;
             color: white;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 15px;
-            border: 2px solid #ff0099;
+            border: 3px solid #ff0099;
             transition: all 0.3s ease-in-out;
-            box-shadow: 0px 0px 20px rgba(255, 0, 153, 0.7);
+            box-shadow: 0px 0px 30px rgba(255, 0, 153, 0.8);
         }
 
         .button:hover {
-            background: transparent;
+            background: #aa0066;
+            color: white;
+            box-shadow: 0px 0px 40px rgba(255, 0, 153, 1);
+            transform: scale(1.08);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 1.1rem;
+            color: #bbbbbb;
+        }
+
+        .footer a {
             color: #ff0099;
-            border: 2px solid #ff0099;
-            box-shadow: 0px 0px 30px rgba(255, 0, 153, 1);
-            transform: scale(1.05);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="https://media.discordapp.net/attachments/1332060569825706125/1333503361739133029/LOGO.gif" class="logo" alt="Logo">
         <h1>KaliWare Loaders</h1>
         <p>Installez nos loaders en un seul endroit :</p>
 
@@ -87,6 +113,11 @@
             <a href="https://gofile.io/d/ZkxUs7" class="button">Unlock All Valorant</a>
             <a href="https://gofile.io/d/BGs1Xm" class="button">Recheck Valorant (Pass: 123)</a>
             <a href="https://gofile.io/d/dFQ1R6" class="button">Bypass Valorant</a>
+        </div>
+
+        <div class="footer">
+            <p>⚠️ Si un fichier ne s'ouvre pas, téléchargez ce prérequis :</p>
+            <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.403-windows-x86-installer">Télécharger .NET SDK 8.0</a>
         </div>
     </div>
 </body>
